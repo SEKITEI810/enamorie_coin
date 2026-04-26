@@ -114,21 +114,6 @@ make -j$(nproc)
 
 ---
 
-## 📁 Main Modified Files
-
-| File | Changes |
-|---------|---------|
-| `src/enamorie.cpp` | Block reward logic (formerly dogecoin.cpp) |
-| `src/enamorie.h` | Function declarations |
-| `src/enamorie-fees.cpp` | Fee calculation & Love-themed labels |
-| `src/enamorie-fees.h` | Fee constants |
-| `src/chainparams.cpp` | General network parameters |
-| `src/amount.cpp` | Currency unit "ENAM" |
-| `src/amount.h` | MAX_MONEY = 21 billion ENAM |
-| `src/policy/policy.h` | Fee policy 0.001 ENAM |
-
----
-
 ## 📜 License
 
 MIT License — The Enamorie Coin Core developers, based on Dogecoin Core and Bitcoin Core.
