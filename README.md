@@ -1,56 +1,56 @@
-#  Enamorie Coin (ENAM)
 
+# Enamorie Coin (ENAM)
 
-Enamorie Coin は Dogecoin をベースにフォークにした暗号通貨です。
-高速な30秒ブロック・超低手数料・寛大な初期報酬設計。
+Enamorie Coin is a cryptocurrency forked from Dogecoin. 
+It features ultra-fast 30-second blocks, ultra-low fees, and a generous initial reward design.
 
 ---
 
 ## User Growth Features
-| 項目 | Dogecoin | Enamorie Coin | 効果 |
+| Feature | Dogecoin | Enamorie Coin | Effect / Benefit |
 |------|----------|---------------|------|
-| ブロック時間 | 60秒 | **30秒** | 確認が2倍速い → UX向上 |
-| 最低手数料 | 0.01 DOGE | **0.001 ENAM** | 10倍安い → マイクロチップが活発化 |
-| コインベース満期 | 30ブロック | **10ブロック** | マイナーがすぐ使える |
-| 初期ブロック報酬 | 最大100万 DOGE | **最大5万 ENAM** | 参入しやすい |
-| 半減期 | 約69日 | **約182日** | 報酬が長続きし採掘者が定着 |
-| テール報酬 | 10,000 DOGE永久 | **500 ENAM永久** | マイナーが採掘し続ける動機 |
-| 最大供給量 | 約1400億 DOGE | **210億 ENAM** | 希少性と普及のバランス |
+| Block Time | 60 sec | **30 sec** | 2x faster confirmations → Improved UX |
+| Minimum Fee | 0.01 DOGE | **0.001 ENAM** | 10x cheaper → Stimulates micro-tipping |
+| Coinbase Maturity | 30 blocks | **10 blocks** | Miners can spend newly minted coins sooner |
+| Initial Block Reward | Up to 1,000,000 DOGE | **Up to 50,000 ENAM** | Easier barrier to entry |
+| Halving Interval | ~69 days | **~182 days** | Rewards last longer, retaining miners |
+| Tail Emission | 10,000 DOGE forever | **500 ENAM forever** | Constant incentive for miners to keep mining |
+| Max Supply | ~140 billion DOGE | **21 billion ENAM** | Balance of scarcity and adoption |
 
-### 設計思想
+### Design Philosophy
 
-1. **超高速ブロック (30秒)** — Twitterチップや決済でストレスゼロ
-2. **超低手数料 (0.001 ENAM)** — 100円のチップも現実的に
-3. **ゆっくりした半減期** — 採掘者が逃げない → ネットワーク安定 → ユーザー信頼
-4. **永久テール報酬** — 採掘インセンティブが消えず、長期的に安全なチェーン
+1. **Ultra-fast blocks (30 seconds)** — Zero stress for Twitter tipping and everyday payments.
+2. **Ultra-low fees (0.001 ENAM)** — Makes micro-tipping (like a 100-yen tip) practical.
+3. **Slower halving schedule** — Prevents miners from abandoning the chain → Network stability → User trust.
+4. **Permanent tail emission** — Mining incentives never disappear, ensuring a secure chain long-term.
 
 ---
 
-## ⚙️ 技術仕様 (Technical Specifications)
+## ⚙️ Technical Specifications
 
-### ネットワーク
-```
-シンボル:         ENAM
-最大供給量:        21,000,000,000 ENAM (210億)
-ブロック時間:      30秒
-半減期:           525,600 ブロック (~6ヶ月)
-アルゴリズム:      Scrypt + AuxPoW (マージマイニング対応)
-メインネットポート: 33776
-テストネットポート: 44776
+### Network
+```text
+Symbol:           ENAM
+Max Supply:       21,000,000,000 ENAM (21 Billion)
+Block Time:       30 seconds
+Halving Interval: 525,600 blocks (~6 months)
+Algorithm:        Scrypt + AuxPoW (Merged Mining Supported)
+Mainnet Port:     33776
+Testnet Port:     44776
 AuxPoW Chain ID:  0x00E5 (229)
 ```
 
-### アドレス
-```
-Mainnet Pubkey:   "E" で始まるアドレス (prefix byte: 33)
-Mainnet Script:   "e" で始まるアドレス (prefix byte: 28)
+### Addresses
+```text
+Mainnet Pubkey:   Addresses starting with "E" (prefix byte: 33)
+Mainnet Script:   Addresses starting with "e" (prefix byte: 28)
 Testnet:          prefix byte 113 (0x71)
 ```
 
-### ブロック報酬スケジュール
-```
-フェーズ1 (ブロック 0-144,999):    ランダム 1〜50,000 ENAM (Dogecoin スタイル)
-フェーズ2 (ブロック 145,000+):
+### Block Reward Schedule
+```text
+Phase 1 (Blocks 0-144,999): Random 1 to 50,000 ENAM (Dogecoin style)
+Phase 2 (Blocks 145,000+):
   Era 0: 10,000 ENAM
   Era 1:  5,000 ENAM
   Era 2:  2,500 ENAM
@@ -59,78 +59,77 @@ Testnet:          prefix byte 113 (0x71)
   Era 5:    312 ENAM
   Era 6:    156 ENAM
   Era 7:     78 ENAM
-  Era 8+:   500 ENAM (永久テール報酬)
+  Era 8+:   500 ENAM (Permanent tail emission)
 ```
 
-### 手数料
-```
-最低推奨手数料:    0.001 ENAM/kB
-リレー最低手数料:  0.0001 ENAM/kB
-ダスト制限:        0.001 ENAM
+### Fees
+```text
+Recommended Minimum Fee: 0.001 ENAM/kB
+Minimum Relay Fee:       0.0001 ENAM/kB
+Dust Limit:              0.001 ENAM
 
-手数料ラベル (Fee Tier Labels):
-  Minimum    — 最低限
-  Warm       — 温かい
-  Affection  — 愛情
-  Passion    — 情熱
-  Devoted    — 献身
-  Enamored   — 恋愛中
+Fee Tier Labels:
+  Minimum    — Bare minimum
+  Warm       — Warm
+  Affection  — Affection
+  Passion    — Passion
+  Devoted    — Devoted
+  Enamored   — In love
 ```
 
 ### Genesis Block
-```
-タイムスタンプ: 1745625600 (2025-04-26 00:00:00 UTC)
-メッセージ:    "Enamorie Coin - Love is the currency of tomorrow - 2025/04/26"
-報酬:          2025 ENAM (年を記念)
+```text
+Timestamp: 1745625600 (2025-04-26 00:00:00 UTC)
+Message:   "Enamorie Coin - Love is the currency of tomorrow - 2025/04/26"
+Reward:    2025 ENAM (Commemorating the year)
 ```
 
-### ネットワーク識別バイト
-```
+### Network Magic Bytes
+```text
 Mainnet: 0xe5 0xe4 0xe3 0xe2  (E N A M)
 Testnet: 0xd5 0xd4 0xd3 0xd2
 ```
 
 ---
 
-
-
-## 🔨 ビルド方法
+## 🔨 Build Instructions
 
 ```bash
-# 依存関係インストール (Ubuntu/Debian)
+# Install dependencies (Ubuntu/Debian)
 sudo apt-get install build-essential libtool autotools-dev automake \
   pkg-config libssl-dev libevent-dev bsdmainutils \
   libboost-system-dev libboost-filesystem-dev libboost-chrono-dev \
   libboost-program-options-dev libboost-test-dev libboost-thread-dev \
   libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libzmq3-dev
 
-# ビルド
+# Build
 ./autogen.sh
-./configure --with-gui=no  # CLIのみ (GUIは --with-gui=qt5)
+./configure --with-gui=no  # CLI only (For GUI use --with-gui=qt5)
 make -j$(nproc)
 
-# 実行
+# Run
 ./src/enamorie-daemon -daemon
 ./src/enamorie-cli getinfo
 ```
 
 ---
 
-## 📁 主な変更ファイル
+## 📁 Main Modified Files
 
-| ファイル | 変更内容 |
+| File | Changes |
 |---------|---------|
-| `src/enamorie.cpp` | ブロック報酬ロジック (旧 dogecoin.cpp) |
-| `src/enamorie.h` | 関数宣言 |
-| `src/enamorie-fees.cpp` | 手数料計算・愛テーマラベル |
-| `src/enamorie-fees.h` | 手数料定数 |
-| `src/chainparams.cpp` | ネットワークパラメータ全般 |
-| `src/amount.cpp` | 通貨単位 "ENAM" |
-| `src/amount.h` | MAX_MONEY = 210億 ENAM |
-| `src/policy/policy.h` | 手数料 0.001 ENAM |
+| `src/enamorie.cpp` | Block reward logic (formerly dogecoin.cpp) |
+| `src/enamorie.h` | Function declarations |
+| `src/enamorie-fees.cpp` | Fee calculation & Love-themed labels |
+| `src/enamorie-fees.h` | Fee constants |
+| `src/chainparams.cpp` | General network parameters |
+| `src/amount.cpp` | Currency unit "ENAM" |
+| `src/amount.h` | MAX_MONEY = 21 billion ENAM |
+| `src/policy/policy.h` | Fee policy 0.001 ENAM |
 
 ---
 
-## 📜 ライセンス
+## 📜 License
 
 MIT License — The Enamorie Coin Core developers, based on Dogecoin Core and Bitcoin Core.
+```
