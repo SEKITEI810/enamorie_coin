@@ -117,4 +117,3 @@ make -j$(nproc)
 ## 📜 License
 
 MIT License — The Enamorie Coin Core developers, based on Dogecoin Core and Bitcoin Core.
-```
