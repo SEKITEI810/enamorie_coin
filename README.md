@@ -1,14 +1,12 @@
-# 💕 Enamorie Coin (ENAM)
+#  Enamorie Coin (ENAM)
 
-> *"Love is the currency of tomorrow"*
 
-Enamorie Coin は Dogecoin をベースにフォークした、**コミュニティ・チップ文化**に特化した暗号通貨です。
-高速な30秒ブロック・超低手数料・寛大な初期報酬設計により、ユーザーが自然に増える構造を持っています。
+Enamorie Coin は Dogecoin をベースにフォークにした暗号通貨です。
+高速な30秒ブロック・超低手数料・寛大な初期報酬設計。
 
 ---
 
-## 🌸 ユーザーが増える設計 (User Growth Features)
-
+## User Growth Features
 | 項目 | Dogecoin | Enamorie Coin | 効果 |
 |------|----------|---------------|------|
 | ブロック時間 | 60秒 | **30秒** | 確認が2倍速い → UX向上 |
@@ -95,27 +93,7 @@ Testnet: 0xd5 0xd4 0xd3 0xd2
 
 ---
 
-## 🚀 ローンチ前チェックリスト
 
-### 必須作業
-
-- [ ] **Genesis ブロックを採掘** して正しいハッシュを取得
-- [ ] `src/chainparams.cpp` のハッシュアサーションを更新
-- [ ] DNS シードノードを設置 (`seed.enamorie.org` など)
-- [ ] `src/chainparamsseeds.h` をクリア（Dogecoin のシードを削除）
-- [ ] テストネットで動作確認
-- [ ] ウォレット UI の残りの "Dogecoin" テキストを全置換
-
-### 推奨作業
-
-- [ ] ロゴ・アイコンを作成（💕ハートをモチーフに）
-- [ ] ブロックエクスプローラーをセットアップ
-- [ ] ウォレット配布パッケージをビルド
-- [ ] コミュニティフォーラム (Discord/Reddit) 開設
-- [ ] 取引所上場申請
-- [ ] Faucet（蛇口）サービス設置 → 新規ユーザー獲得
-
----
 
 ## 🔨 ビルド方法
 
