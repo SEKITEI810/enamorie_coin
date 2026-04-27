@@ -19,8 +19,8 @@ It features ultra-fast 30-second blocks, ultra-low fees, and a generous initial 
 
 ### Design Philosophy
 
-1. **Ultra-fast blocks (30 seconds)** — Zero stress for Twitter tipping and everyday payments.
-2. **Ultra-low fees (0.001 ENAM)** — Makes micro-tipping (like a 100-yen tip) practical.
+1. **Ultra-fast blocks (30 seconds)** — Zero stress for everyday payments.
+2. **Ultra-low fees (0.001 ENAM)** — Makes micro-tipping practical.
 3. **Slower halving schedule** — Prevents miners from abandoning the chain → Network stability → User trust.
 4. **Permanent tail emission** — Mining incentives never disappear, ensuring a secure chain long-term.
 
